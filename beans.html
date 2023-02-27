@@ -7,99 +7,166 @@
     <title>All About Coffee</title>
     <link rel="stylesheet" href="style.css ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
 
 </head>
 <body>
-    
-    <header>
-        <a href="index.html"><img src="logo123.png"></a>
-         <h2> Follow Us on Social
-            <div class="himg">
-         <p><a href="#"><img src="fb.png" alt="" style="border-radius: 50%; width: 40px;"></a>
-         <a href="#"><img src="tweet.png" alt="" style="border-radius: 50%; width: 40px;"></a>
-         <a href="#"><img src="linkin.png" alt=""style="border-radius: 50%; width: 40px;"></a></p>
-             </div>  
-         </h2>
-         
-     </header>
-     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid" style=" background-color: rgb(138, 94, 56); padding:0px; margin: 0px;">
-          <a class="navbar-brand" href="#">All About Coffee</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                <a class="nav-link" href="coffee.html">Coffee</a>
-                <a class="nav-link" href="beans.html">Beans</a>
-                <a class="nav-link" href="orderpage.html" tabindex="-1">How to Order</a>
+     <!-- Navbar Start -->
+     <div class="container-fluid p-0 nav-bar">
+        <nav class="navbar navbar-expand-lg bg-none navbar-dark py-3">
+            <a href="index.html" class="navbar-brand px-lg-4 m-0">
+                <h5 class="m-0 display-4 text-uppercase text-white">All About Coffee</h5>
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto p-4">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Coffee</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="coffee.html" class="dropdown-item ">What is Coffee</a>
+                            <a href="10step.html" class="dropdown-item">10 Steps from seed to cup</a>
+                            <a href="decaf.html" class="dropdown-item"> All about DECAF</a>
+                            <a href="store.html" class="dropdown-item">How to store Coffee</a>
+                            <a href="cch.html" class="dropdown-item">Coffee And Health</a>
+                            <a href="organic.html" class="dropdown-item">Organic Coffee</a>
+                        </div>
+                    </div>
+                    <a href="beans.html" class="nav-item nav-link">Beans</a>
+                    <a href="orderpage.html" class="nav-item nav-link">Product</a>
+                   
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+    <!-- Carousel Start -->
+    <div id="carouselExample" class="carousel slide carousel-fade" style="margin-top:-10px;">
+        <div class="carousel-inner overlay-bottom">
+          <div class="carousel-item active">
+            <img src="carousel-1.jpg" class="d-block w-100" alt="" style="height:800px;">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-primary font-weight-medium m-0">All About</h2>
+                <h1 class="display-1 text-white m-0">COFFEE</h1>
+                <h2 class="text-white m-0">* SINCE 2023*</h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="carousel-2.jpg" class="d-block w-100" alt="" style="height:800px;">
+            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                <h2 class="text-primary font-weight-medium m-0">All About</h2>
+                <h1 class="display-1 text-white m-0">COFFEE</h1>
+                <h2 class="text-white m-0">* SINCE 2023*</h2>
             </div>
           </div>
         </div>
-      </nav>
-       
-       <main>
-        <img src="diffcoffee.jpg" alt="">
-    </main>
-            <article>
-                <h1>Do different plants produce different coffee beans?</h1>
-                Yes, there’s over 120 varieties of coffee plants and each produces a different type of coffee bean, however the majority of the coffee we consume comes from just two variants, Robusta (also known as Coffea Robusta or Coffea Canephora) or Arabica (Coffea Arabica) or a blend of the two. The two varieties differ in taste, growing conditions, and price.
-                <h1>Arabica Coffee Beans (Coffea arabica)</h1>
-                <div class="cont">
-                    <img src="arab.jpg" alt="">
-                    <div class="info"><p>Arabica coffee beans is one of the most popular types and it’s believed to be one of the first coffee species ever grown with roots dating back to 1,000BC. The beans are generally oval in shape, have a pronounced centre crease and are larger than Robusta beans.
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Carousel End -->
 
-                        Known for their vibrant and complex flavours, these beans are loved by coffee connoisseurs because they tend to have a sweeter, softer taste, with tones of fruits, florals, chocolate and nuts, although their acidity is higher.
-                        
-                        Generally, it is more expensive than Robusta. This is because it is much more delicate and needs more specific cultivation requirements, such as weather and altitude, to grow. Typically, Arabica coffee beans are grown at altitudes between 500m and 2500m and have low caffeine content. Latin America, specifically Brazil, is currently the largest producer of Arabica coffee.</p></div>    
+     <!-- About Start -->
+     <div class="container-fluid py-5">
+        <div class="container">
+            <div>
+                <h4 class="text-primary text-uppercase" style="letter-spacing: 5px;">Different type of Beans</h4>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 py-0 py-lg-5">
+                    <h1>Do different plants produce different coffee beans?</h1>
+                    Yes, there’s over 120 varieties of coffee plants and each produces a different type of coffee bean, however the majority of the coffee we consume comes from just two variants, Robusta (also known as Coffea Robusta or Coffea Canephora) or Arabica (Coffea Arabica) or a blend of the two. The two varieties differ in taste, growing conditions, and price.
+                    <h1>Arabica Coffee Beans (Coffea arabica)</h1>
+                    <div class="cont">
+                        <img src="arab.jpg" alt="" style="width: 500px;">
+                        <div class="info"><p>Arabica coffee beans is one of the most popular types and it’s believed to be one of the first coffee species ever grown with roots dating back to 1,000BC. The beans are generally oval in shape, have a pronounced centre crease and are larger than Robusta beans.
+    
+                            Known for their vibrant and complex flavours, these beans are loved by coffee connoisseurs because they tend to have a sweeter, softer taste, with tones of fruits, florals, chocolate and nuts, although their acidity is higher.
+                            
+                            Generally, it is more expensive than Robusta. This is because it is much more delicate and needs more specific cultivation requirements, such as weather and altitude, to grow. Typically, Arabica coffee beans are grown at altitudes between 500m and 2500m and have low caffeine content. Latin America, specifically Brazil, is currently the largest producer of Arabica coffee.</p></div>    
+                    </div>
+                    <h1>Robusta Coffee Beans (Coffea caniphora)</h1>
+                    <div class="cont">
+                        <img src="robusta.jpg" alt="" style="width: 500px;">
+                        <div class="info"><p>Commonly grown in Africa, Vietnam and Indonesia, Robusta has lower acidity levels than Arabica coffee, meaning it generally tastes much less sweet. Due to its simpler acidity and deeper and stronger flavour compounds, Robusta can produce tones of wood or burnt rubber. It’s a popular choice for espressos due to the rich flavour and layer of crema it gives.
+    
+                            Robustas are grown in altitudes of no more than 1000m, and they produce fruit much more quickly than the Arabicas, which need several years to come to maturity, and they yield more crop per tree. They are less vulnerable to pests and weather conditions and this is the main reason why they are on average cheaper than Arabicas. One other aspect to bear in mind is that Robusta coffee beans have a higher caffeine content.
+                            
+                            Coffee beans from the Robusta species are generally smaller and more circular than Arabica beans, they are also usually paler, and the centre crease is less pronounced.</p></div>    
+                    </div>
+                    <h1>Liberica Coffee Beans (Coffea liberica)</h1>
+                    <div class="cont">
+                        <img src="liberica.jpg" alt="" style="width: 500px;">
+                        <div class="info"><p>Native to central and western Africa  specifically Liberia, hence its name  Coffea liberica is prized for its piquant floral aroma and bold, smoky flavor profile. This hardy species is frequently mixed with other varieties to add body and complexity, but rarely receives any credit. Unheard of in Western civilization before the late 1800s, Liberica gained a foothold with Southeast Asian coffee producers after a fungal disease (“coffee rust”) wiped out much of the region’s Arabica crops.
+    
+                            Growing from a much larger plant than Arabica or Robusta, most Liberica cherries tend to be irregular in shape and closer to Robusta in size and general appearance. It’s also tolerant of hot, humid climates and does well at low altitude. Now produced mainly in Indonesia, Malaysia, and the Philippines, the bean makes up roughly 2% of the world’s coffee supply. Over 95% percent of the Malaysian coffee yield is Liberica beans. However, it’s not commonly found in North American and European markets.
+                    </div>
                 </div>
-                <h1>Robusta Coffee Beans (Coffea caniphora)</h1>
-                <div class="cont">
-                    <img src="robusta.jpg" alt="">
-                    <div class="info"><p>Commonly grown in Africa, Vietnam and Indonesia, Robusta has lower acidity levels than Arabica coffee, meaning it generally tastes much less sweet. Due to its simpler acidity and deeper and stronger flavour compounds, Robusta can produce tones of wood or burnt rubber. It’s a popular choice for espressos due to the rich flavour and layer of crema it gives.
+                    <h1>Excelsa Coffee Beans (Coffea excelsa)</h1>
+                    <div class="cont">
+                        <img src="excelsa.jpg" alt="" style="width: 500px;">
+                        <div class="info"><p>The fourth major type of coffee bean is called Excelsa. Though it was once considered a separate coffee species, scientists recently reclassified it as a Liberica variant.</p>
+                            <p>Excelsa beans grow almost entirely in Southeast Asia, and they’re shaped somewhat like Liberica beans — elongated ovals. These beans grow on large 20 to 30-foot coffee plants at medium altitudes.</p>
+                    </div>
+                   </div>
+    </div>
+    </div>
+</div>
+</div>
+    <!-- About End -->
 
-                        Robustas are grown in altitudes of no more than 1000m, and they produce fruit much more quickly than the Arabicas, which need several years to come to maturity, and they yield more crop per tree. They are less vulnerable to pests and weather conditions and this is the main reason why they are on average cheaper than Arabicas. One other aspect to bear in mind is that Robusta coffee beans have a higher caffeine content.
-                        
-                        Coffee beans from the Robusta species are generally smaller and more circular than Arabica beans, they are also usually paler, and the centre crease is less pronounced.</p></div>    
-                </div>
-                <h1>Liberica Coffee Beans (Coffea liberica)</h1>
-                <div class="cont">
-                    <img src="liberica.jpg" alt="">
-                    <div class="info"><p>Native to central and western Africa  specifically Liberia, hence its name  Coffea liberica is prized for its piquant floral aroma and bold, smoky flavor profile. This hardy species is frequently mixed with other varieties to add body and complexity, but rarely receives any credit. Unheard of in Western civilization before the late 1800s, Liberica gained a foothold with Southeast Asian coffee producers after a fungal disease (“coffee rust”) wiped out much of the region’s Arabica crops.
 
-                        Growing from a much larger plant than Arabica or Robusta, most Liberica cherries tend to be irregular in shape and closer to Robusta in size and general appearance. It’s also tolerant of hot, humid climates and does well at low altitude. Now produced mainly in Indonesia, Malaysia, and the Philippines, the bean makes up roughly 2% of the world’s coffee supply. Over 95% percent of the Malaysian coffee yield is Liberica beans. However, it’s not commonly found in North American and European markets.
+
+
+
+ <!-- Footer Start -->
+ <div class="container-fluid footer text-white mt-5 pt-5 px-0 position-relative overlay-top">
+    <div class="row mx-0 pt-5 px-sm-3 px-lg-5 mt-4">
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-uppercase mb-4" style="letter-spacing: 3px;">Get In Touch</h4>
+            <p><i class="bi bi-geo-alt"></i>123 Street, Naga City, Philippines</p>
+            <p><i class="bi bi-phone"></i>+63981123456789</p>
+            <p class="m-0"><i class="bi bi-envelope"></i></i>info@example.com</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Follow Us</h4>
+            <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+            <div class="d-flex justify-content-start">
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="bi bi-twitter"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="bi bi-facebook"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="bi bi-linkedin"></i></a>
+                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5">
+            <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
+            <p>Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum</p>
+            <div class="w-100">
+                <div class="input-group">
+                    <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Your Email">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary font-weight-bold px-3">Sign Up</button>
+                    </div>
                 </div>
             </div>
-                <h1>Excelsa Coffee Beans (Coffea excelsa)</h1>
-                <div class="cont">
-                    <img src="excelsa.jpg" alt="">
-                    <div class="info"><p>The fourth major type of coffee bean is called Excelsa. Though it was once considered a separate coffee species, scientists recently reclassified it as a Liberica variant.</p>
-                        <p>Excelsa beans grow almost entirely in Southeast Asia, and they’re shaped somewhat like Liberica beans — elongated ovals. These beans grow on large 20 to 30-foot coffee plants at medium altitudes.</p>
-                </div>
-               </div>
-               
-        </article>
+        </div>
+    </div>
+    <div class="container-fluid text-center text-white border-top mt-4 py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <p class="mb-2 text-white">Copyright &copy; <a class="font-weight-bold" href="#">Domain</a>. All Rights Reserved.</a></p>
+      
+    </div>
+</div>
+<!-- Footer End -->
 
 
-            <aside> 
-                <h1>From the Blog</h1>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolor temporibus dignissimos placeat vitae provident, dicta praesentium nisi accusamus veritatis corrupti delectus excepturi ipsa recusandae? Sint excepturi eius velit facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequatur vero! Velit, numquam voluptatem? Laborum libero tempore facere at quis, animi impedit obcaecati tempora nihil numquam sed ut architecto quibusdam?</p>
-                <hr>
-                <h1>Health benefits</h1>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolor temporibus dignissimos placeat vitae provident, dicta praesentium nisi accusamus veritatis corrupti delectus excepturi ipsa recusandae? Sint excepturi eius velit facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequatur vero! Velit, numquam voluptatem? Laborum libero tempore facere at quis, animi impedit obcaecati tempora nihil numquam sed ut architecto quibusdam?</p>
-                <hr>
-                <h1>Coffee 101</h1>
-                <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolor temporibus dignissimos placeat vitae provident, dicta praesentium nisi accusamus veritatis corrupti delectus excepturi ipsa recusandae? Sint excepturi eius velit facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequatur vero! Velit, numquam voluptatem? Laborum libero tempore facere at quis, animi impedit obcaecati tempora nihil numquam sed ut architecto quibusdam?</p>
-                <hr>
-
-            </aside>
-    
-    <footer>Contact US     Partner with US  Follow Us! <a href=""><img src="" alt="">fb</a><a href=""><img src="" alt="">twitter</a><a href=""><img src="" alt="">linkedin</a><a href=""><img src="" alt="">Google+</a> 
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>

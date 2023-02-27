@@ -1,298 +1,80 @@
-body
-{
-    display: grid;
-            grid-template-areas: 
-            "header header"
-            "nav nav"
-            "main article"
-            "aside article"
-            "footer footer";
-            grid-template-columns: 30vh auto;
-            grid-template-rows: 30vh 10vw auto auto 10vh;
-            width: 100%;
-            padding: 0px;
-            margin: 0px
-}
-header
-{
-    margin-top: 0px;
-    background-image: url("kopi.jpg");
-    grid-area: header;
-   
-}
-header img
-{
-    width: 450px;
-    margin-top: 10px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-header h2
-{
-    margin-top: -60px;
-    margin-left: 500px;
-}
-header .himg
-{
-    width: 150px;
-    margin-top: 0px;
-    margin-left: -10px;
-    margin-right: 0px;
-}
-footer
-{
-    background-image: url("foot.jpg");
-    grid-area: footer;
-}
-nav
-{
-    background-color: rgb(138, 94, 56);
-    grid-area: nav;
-    padding: 10px;
-
-}
-nav a
-{
-    padding: 20px;
-    align-items: center;
-    margin-left: 50px;
-}
-main
-{
-    background-color: rgb(240, 204, 178);
-    grid-area: main;
-    text-align: center;
-}
-main p
-{
-    margin-top: 15px;
-}
-article
-{
-    background-color: rgb(236 , 224 , 209);
-    grid-area: article;
-    padding-left: 15px;
+.container-fluid.nav-bar, .nav-bar.container-sm, .nav-bar.container-md, .nav-bar.container-lg, .nav-bar.container-xl {
+    position: absolute;
+    z-index: 9;
+  }
+  .nav-link {
+    padding-left: 20px;
     padding-right: 15px;
-}
-article img
-{
-    width: 300px;
-    margin-top: -20px;
-    margin-left: 20px;
-    margin-right: 0px;
-}
-article .cont
-{
-    display: grid;
-    grid-template-areas:
-    "img content";
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    margin:0px;
-}
-article .cont img
-{
-    grid-area: img;
-    width: 150px;
-    margin-left: 0px;
-    margin-top: 10px;
-}
-article .cont .info
-{
-    grid-area: content;
-}
-article hr {
-    border: 2px solid rgb(226, 132, 16);
-    
-    
-}
-aside
-{
-    background-color: rgb(213, 193, 172);
-    grid-area: aside;
-    padding-left: 13px;
-}
-.social{
-    background-color: bisque;
-    grid-area: social;
-    align-items: center;
-}
-.social img
-{
-    width: 50px;
-}  
-nav button , button:visited {
-    background-color: rgb(228, 161, 79); 
-    color: black;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #FFFBF2;
   }
-  nav button:hover 
-  {
-    background-color: rgb(236, 213, 185); 
-    color: black;
-    padding: 10px 15px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 0px;
+  .navbar-nav .nav-link:hover,
+ .navbar-nav .nav-link.active {
+    color: #DA9F5B;
   }
-  main img
-  {
-    width: 250px;
-    margin: 0px;
+  .nav-item {
+    margin-bottom: -1px;
+  }
+  .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #FFFBF2;
+    border-color: #dee2e6 #dee2e6 #FFFBF2;
+  }
+  .dropdown-menu {
+    margin-top: -1px;
   }
   
-/* for desktop screen */
-@media screen and (min-width: 800px) and (max-width: 2000px) {
-        body
-        {
-            display: grid;
-            grid-template-areas: 
-            "header header header"
-            "nav nav nav"
-            "main article aside"
-            "footer footer footer";
-            grid-template-columns: 33vh auto 50vh;
-            grid-template-rows: 20vh 7vh auto 10vh;
-            height: 1000px;
-            padding: 0px;
-            margin: 0px
-        }
-        header
-        {
-            background-image: url("kopi.jpg");
-            grid-area: header;
-        }
-        header img
-        {
-            width: 500px;
-            margin-top: -10px;
-            margin-left: 20px;
-            margin-right: 0px;
-        }
-        header h2
-        {
-            margin-top: -140px;
-            margin-left: 1550px;
-        }
-        header .himg
-        {
-            width: 250px;
-            margin-top: 0px;
-            margin-left: -0px;
-            margin-right: 0px;
-        }
-        footer
-        {
-            background-image: url("foot.jpg");
-            grid-area: footer;
-        }
-        nav
-        {
-            background-color: rgb(138, 94, 56);
-            grid-area: nav;
-            padding: 10px;
-        }
-        nav a
-        {
-            padding: 20px;
-            align-items: center;
-            margin-left: 50px;
-        }
-        main
-        {
-            background-color: rgb(240, 204, 178);
-            grid-area: main;
-            text-align: center;
-        }
-        main img
-        {
-          width: 300px;
-          height: 600px;
-         
-        }
-        article
-        {
-            background-color: rgb(236 , 224 , 209);
-            grid-area: article;
-            padding-left: 15px;
-            padding-right: 15px;
-        }
-        article .cont
-        {
-        display: grid;
-        grid-template-areas:
-        "img content";
-        grid-template-columns: auto;
-        grid-template-rows: auto auto;
-        gap: 20px;
-        margin:0px;
-        }
-        article .cont img
-        {
-        grid-area: img;
-        width: 450px;
-        margin-left: 0px;
-        margin-top: 10px;
-        }
-        article .cont .info
-    {
-       grid-area: content;
-    }
-        article img
-        {
-            width: 300px;
-            margin-top: 10px;
-            margin-left: 300px;
-            margin-right: 0px;
-        }
-        article hr {
-            border: 2px solid rgb(226, 132, 16);
-            
-            
-        }
-        aside
-        {
-            background-color: rgb(213, 193, 172);
-            grid-area: aside;
-            padding-left: 13px;
-        }
-        .social{
-            background-color: bisque;
-            grid-area: social;
-            align-items: center;
-        }
-        .social img
-        {
-            width: 50px;
-        }
-        nav button , button:visited {
-            background-color: rgb(228, 161, 79); 
-            color: black;
-            padding: 10px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 0px;
-          }
-          nav button:hover 
-          {
-            background-color: rgb(236, 213, 185); 
-            color: black;
-            padding: 10px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 0px;
-          }
-       
- }
+
+
+  
+
+.overlay-top::before,
+.overlay-bottom::after {
+    position: absolute;
+   
+    width: 100%;
+    height: 15px;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay-top::before {
+    top: 10px;
+    background: url("overlay-top.png");
+}
+
+.overlay-bottom::after {
+    bottom: -1px;
+    background: url("overlay-bottom.png");
+}
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(51, 33, 29, .7);
+    z-index: 1;
+}
+.footer {
+    background: linear-gradient(rgba(51, 33, 29, 0.9), rgba(51, 33, 29, 0.9)), url("bg.jpeg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.input-group-append {
+  display: flex;
+}
+
+
+.input-group-append .btn {
+  position: relative;
+  z-index: 2;
+}
+
+
+.input-group-append .btn:focus {
+  z-index: 3;
+}
