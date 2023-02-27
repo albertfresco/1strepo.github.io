@@ -1,4 +1,4 @@
-.container-fluid.nav-bar, .nav-bar.container-sm, .nav-bar.container-md, .nav-bar.container-lg, .nav-bar.container-xl {
+.container-fluid.nav-bar{
     position: absolute;
     z-index: 9;
   }
@@ -25,10 +25,6 @@
     margin-top: -1px;
   }
   
-
-
-  
-
 .overlay-top::before,
 .overlay-bottom::after {
     position: absolute;
